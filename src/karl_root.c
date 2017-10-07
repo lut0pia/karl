@@ -21,10 +21,9 @@ const char* karl_root()
 		}
 		if(path<=buffer+3)
 		{
-			fprintf(stderr, "Couldn't find root directory .karl\n");
-			exit(1);
+			return NULL;
 		}
-		printf("Root is \"%s\"\n", path);
+		//printf("Root is \"%s\"\n", path);
 	}
 	return path;
 }

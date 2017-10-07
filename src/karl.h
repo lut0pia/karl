@@ -13,13 +13,14 @@ int karl_init(int argc, char** argv); // Initialize the root folder for Karl
 int karl_destroy(int argc, char** argv); // Destroy current karl folder
 int karl_ls(int argc, char** argv); // Ask known peers about files in a folder
 int karl_get(int argc, char** argv); // Get specific file from peers
-int karl_probe(int argc, char** argv); // Tries random IPs and asks peers for more peers
 int karl_daemon(); // Launches the Karl server
 
 // Utils
 int karl_shell(const char* cmd);
 int karl_file_exists(const char* path);
 const char* karl_root();
+const char* karl_require_root();
+int karl_fork_daemon();
 
 // Peers
 typedef struct karl_peer_t
