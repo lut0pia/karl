@@ -25,7 +25,7 @@ Listing is done through the "karl ls" command. It allows the user to know about 
 folder. The command should block for a specific amount of time before printing the list to the user (since it 
 needs to wait for a few responses to have a result).
 
-## How to avoid garbage?
+#### How to avoid garbage?
 
 Listing asks multiple peers at the same time, and responses may vary from peer to peer. Because of that, one 
 could filter listing responses incoherent with the majority (or some other percentage) of the other responses.
